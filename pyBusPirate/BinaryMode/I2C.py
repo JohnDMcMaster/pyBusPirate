@@ -20,11 +20,11 @@ You should have received a copy of the GNU General Public License
 along with pyBusPirate.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-from .BitBang import BBIO
+from BitBang import BBIO
 
 class I2CSpeed:
-	_50KHZ = 0b000
-	_5KHZ = 0b001
+	_50KHZ = 0x00
+	_5KHZ = 0x01
 
 class I2CPins:
 	POWER = 0x8
